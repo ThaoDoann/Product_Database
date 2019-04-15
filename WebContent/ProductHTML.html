@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+<style>
+table, td {
+	margin: auto;
+	border: 0px solid white;
+}
+</style>
+</head>
+<body>
+<h2> PRODUCT INFORMATION</h2><br>
+<form action = "ProductServlet" method = "post" >
+ <fieldset>
+	<table>
+		<tr>
+			<td>Product ID </td>
+			<td> <input type="text" name = "productID" placeholder="Product ID" required>  </td>
+		</tr>
+		<tr>
+			<td>Product Name </td>
+			<td> <input type="text" name = "productName" placeholder="Product name" >  </td>
+		</tr>
+		<tr>
+			<td>Price </td>
+			<td> <input type="number" name = "price" step="0.01" placeholder="Price" max = "10000000">  </td>
+		</tr>
+		<tr>
+			<td>Quantity </td>
+			<td> <input type="number" name = "quantity" step="1" placeholder="Quantity" max = "10000000">  </td>
+		</tr>
+		<tr>
+			<td>Category </td>
+			<td> <input type="text" name = "category" placeholder="Category" >  </td>
+		</tr>
+		<tr>
+			<td> <button type="submit" name="action" value = "addProduct"><span>Add </span></button> 
+			<button type="submit" name="action" value = "viewProduct"><span>View </span></button>   </td>
+			
+			<td><button type="submit" name="action" value = "edit"><span>Edit </span></button>
+			<button type="reset" value = "reset"><span>Reset </span></button> </td>
+		</tr>
+	</table>
+ </fieldset>
+</form>
+
+</body>
+</html>
